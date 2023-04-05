@@ -2,13 +2,24 @@
     margin: 0;
     padding: 0;
 }
-
+.container{
+    position: absolute;
+}
 .container img{
-    height: 99vh;
-    width: 99vw;
+    
+    /* position:relative;
+    top: 0%; */
+    /* left: 0; */
+    height: 91vh;
+    width: 98.5vw;
     /* background-color: aqua; */ 
 }
-
+h1{
+    background-color: #192E0C;
+    text-align: center;
+    color: white;
+    padding: 8px 0px;
+}
 .wrapper{
     
     border: 5px solid black;

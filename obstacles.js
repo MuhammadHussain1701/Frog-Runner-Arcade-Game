@@ -141,5 +141,17 @@ function handleObstacles()
         }
     }
 
+    if(score===200)
+    {
+        alert(`YOU WIN, CONGRATULATIONS! YOUR FINAL SCORE IS ${score}`)
+        document.reload();
+
+    }
+    if(collisionsCount===10)
+    {
+        alert(`TOO MANY COLLISIONS.RELOAD TO PLAY AGAIN`)
+        document.reload();
+    }
+
 
 }
