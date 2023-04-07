@@ -43,23 +43,23 @@ const logsArray=[]
 // Images
 
 const backgroundLevel2=new Image()
-backgroundLevel2.src='/images/background_lvl2.png'
+backgroundLevel2.src='images/background_lvl2.png'
 
 const grass=new Image()
-grass.src='/images/grass.png'
+grass.src='images/grass.png'
 
 const collisions=new Image()
-collisions.src='/images/collisions.png'
+collisions.src='images/collisions.png'
 
 const turtle=new Image()
-turtle.src='/images/turtles.png'
+turtle.src='images/turtles.png'
 
 const log=new Image()
-log.src='/images/log.png'
+log.src='images/log.png'
 
 const car=new Image()
-car.src='/images/cars.png'
+car.src='images/cars.png'
 let numberOfCars=3
 
 const froggerSprite=new Image()
-froggerSprite.src='/images/frog_spritesheet.png'
+froggerSprite.src='images/frog_spritesheet.png'

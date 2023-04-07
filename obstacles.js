@@ -1,5 +1,5 @@
-const collisionAudio=new Audio('../collision.mp3')
-const drowningAudio=new Audio('../drowning.mp3')
+const collisionAudio=new Audio('collision.mp3')
+const drowningAudio=new Audio('drowning.mp3')
 class Obstacles{
 
     constructor(x,y,width,height,speed,type){
