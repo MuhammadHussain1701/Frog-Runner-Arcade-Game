@@ -1,4 +1,4 @@
-const frog=new Audio('../frog.mp3')
+const frog=new Audio('frog.mp3')
 class Frogger{
     constructor(){
         this.spriteWidth=250
