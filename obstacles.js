@@ -1,3 +1,5 @@
+const collisionAudio=new Audio('../collision.mp3')
+const drowningAudio=new Audio('../drowning.mp3')
 class Obstacles{
 
     constructor(x,y,width,height,speed,type){
@@ -112,6 +114,7 @@ function handleObstacles()
     for(let i=0;i<carsArray.length;i++)
     {
         if(collision(frogger,carsArray[i])){
+            collisionAudio.play()
             ctx4.drawImage(collisions,0,100,100,100,frogger.x,frogger.y,50,50)
             resetGame()
         }
@@ -126,6 +129,7 @@ function handleObstacles()
         for(let i=0;i<logsArray.length;i++){
             if(collision(frogger,logsArray[i]))
             {
+                // collisionAudio.play()
                 frogger.x+=logsArray[i].speed
                 safe=true
             }
@@ -137,6 +141,7 @@ function handleObstacles()
             {
                 rippleArray.unshift(new Particle(frogger.x,frogger.y))
             }
+            drowningAudio.play()
             resetGame()
         }
     }

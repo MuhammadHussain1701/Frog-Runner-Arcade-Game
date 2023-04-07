@@ -1,3 +1,4 @@
+const frog=new Audio('../frog.mp3')
 class Frogger{
     constructor(){
         this.spriteWidth=250
@@ -14,8 +15,11 @@ class Frogger{
     update(){
         
         if(keys['ArrowUp']){
+            frog.play()
+            
             if(this.moving===false)
             {
+
                 this.y-=grid
                 this.moving=true
                 this.frameX=1
@@ -23,6 +27,7 @@ class Frogger{
             }
         }
         if(keys['ArrowDown']){
+            frog.play()
             if(this.moving===false&&this.y<canvas.height-this.height*2)
             {
                 this.y+=grid
@@ -31,6 +36,7 @@ class Frogger{
             }
         }
         if(keys['ArrowLeft']){
+            frog.play()
             if(this.moving===false &&this.x>this.width)
             {
                 this.x-=grid
@@ -39,6 +45,7 @@ class Frogger{
             }
         }
         if(keys['ArrowRight']){
+            frog.play()
             if(this.moving===false&&this.x<canvas.width-this.width*2)
             {
                 this.x+=grid
